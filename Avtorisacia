@@ -1,0 +1,30 @@
+from tkinter import *
+ 
+root = Tk()     # создаем корневой объект - окно
+root.title("Приложение на Tkinter")     # устанавливаем заголовок окна
+root.geometry("610x425")    # устанавливаем размеры окна
+root.configure(bg='#fff')
+
+label = Label(text="Авторизация",bg='#fff' , font=("Montserrat", 28)) # создаем текстовую метку
+label.pack()    # размещаем метку в окне
+
+ #login
+Login = Label(text = "Логин",bg='#fff' ,font=("Montserrat", 18))
+Login.place(x =45,y = 65)
+log = Entry(root)
+log.place(x = 35, y = 100, width=520, height=40)
+
+#password
+Password = Label(text = "Пароль", bg='#fff' ,font=("Montserrat", 18))
+Password.place(x =45,y = 165)
+passw = Entry(root)
+passw.place(x = 35, y = 200, width=520, height=40)
+
+#button
+but1 = Button(text="Войти", bg="#BA5809",bd=0, fg="white", font=(" Montserrat", 15))
+but1.place(x = 200, y = 290, width=245, height=50)
+#perexod
+Perexod = Label(text = "Еще нет аккаунта?/Забыли пароль?", bg='#fff' ,font=("Montserrat", 9))
+Perexod.place(x = 210, y = 360)
+
+root.mainloop()
